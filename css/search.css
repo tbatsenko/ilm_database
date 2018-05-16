@@ -3,6 +3,10 @@
     --btn-color: #398ccf;
     --main-txt-color: #398ccf;
 }
+
+body{
+    background-color: #eee;
+}
 p {
     font-family: "Webly Sleek SemiLight",Helvetica-,droid sans,sans-serif;font-weight: normal;margin: 0 0 1rem;
 }
