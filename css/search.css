@@ -91,6 +91,7 @@ p {
      border-top: 0px;
 }
  .main-btn {
+    background-color: #fff !important;
     display: inline-block;
     width:150px;
     height:50px;
