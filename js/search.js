@@ -33,12 +33,12 @@ replaceMatches();
 
 function clearText(thefield) {
   if (thefield.defaultValue == thefield.value) {
-    thefield.value = ""
+    thefield.value = " "
   }
 }
 
 function replaceText(thefield) {
-  if (thefield.value == "") {
+  if (thefield.value == " ") {
     thefield.value = thefield.defaultValue
   }
 }
