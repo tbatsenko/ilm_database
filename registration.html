@@ -27,7 +27,7 @@
 
     <div class="wrapper">
 
-    <form class="form-registration">
+    <form class="form-registration" action="/signup-form" method="post">
 
       <ul class="flex-outer">
 
@@ -35,67 +35,67 @@
 
         <li>
           <label for="first-name">Ім'я</label>
-          <input type="text" id="first-name" placeholder="Введіть Ваше ім'я" required>
+          <input type="text" id="first-name" placeholder="Введіть Ваше ім'я" required name="first-name">
         </li>
         <li>
           <label for="last-name">Прізвище</label>
-          <input type="text" id="last-name" placeholder="Введіть Ваше прізвище" required>
+          <input type="text" id="last-name" placeholder="Введіть Ваше прізвище" required name="last-name">
         </li>
         <li>
           <label for="city">Місто</label>
-          <input type="text" id="city" placeholder="Введіть місто де ви зараз проживаєте" required>
+          <input type="text" id="city" placeholder="Введіть місто де ви зараз проживаєте" required name="city">
         </li>
 
         <li>
           <label for="occupation">Посада</label>
-          <input type="text" id="occupation" placeholder="Введіть Вашу посаду">
+          <input type="text" id="occupation" placeholder="Введіть Вашу посаду" name="occupation">
         </li>
 
         <li>
           <label for="company">Компанія / організація</label>
-          <input type="text" id="company" placeholder="Введіть назву компанії / організації" required>
+          <input type="text" id="company" placeholder="Введіть назву компанії / організації" required name="company">
         </li>
 
         <li>
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Введіть Ваш email" required>
+          <input type="email" id="email" placeholder="Введіть Ваш email" required name="email">
         </li>
         <li>
-            <input class="hide_checkbox" type="checkbox" id="hide_email">
+            <input class="hide_checkbox" type="checkbox" id="hide_email" name="hide_email">
             <label class="hide_checkbox" for="hide_email">Приховати Email від інших користувачів</label>
         </li>
         <li>
           <label for="facebook">Facebook</label>
-          <input type="link" id="facebook" placeholder="Посилання на Вашу Facebook сторінку">
+          <input type="link" id="facebook" placeholder="Посилання на Вашу Facebook сторінку" name="facebook">
         </li>
 
         <li>
           <label for="linkedin">LinkedIn</label>
-          <input type="link" id="linkedin" placeholder="Посилання на Вашу LinkedIn сторінку">
+          <input type="link" id="linkedin" placeholder="Посилання на Вашу LinkedIn сторінку" name="linkedin">
         </li>
 
         <li>
           <label for="phone">Телефон</label>
-          <input type="tel" id="phone" placeholder="Введіть Ваш телефон">
+          <input type="tel" id="phone" placeholder="Введіть Ваш телефон" name="phone">
         </li>
         <li>
-            <input class="hide_checkbox" type="checkbox" id="hide_phone">
+            <input class="hide_checkbox" type="checkbox" id="hide_phone" name="hide_phone">
             <label class="hide_checkbox" for="hide_phone">Приховати телефон від інших користувачів</label>
         </li>
         <li>
           <label for="message">Коротко про Вас</label>
-          <textarea rows="6" id="message" placeholder="Коротко опишіть хто ви і чим займаєтесь"></textarea>
+          <textarea rows="6" id="message" placeholder="Коротко опишіть хто ви і чим займаєтесь" name="message"></textarea>
         </li>
 
 
         <li>
           <label for="program">Назва програми в ІЛМ</label>
-          <input type="text" id="program" placeholder="Введіть назва програми в ІЛМ де ви навчалися" required>
+          <input type="text" id="program" placeholder="Введіть назва програми в ІЛМ де ви навчалися" required name="program">
         </li>
 
         <li>
           <label for="grad_year">Рік випуску з ІЛМ</label>
-          <input type="number" id="grad_year" placeholder="Введіть рік випуску з ІЛМ" required>
+          <input type="number" id="grad_year" placeholder="Введіть рік випуску з ІЛМ" required name="grad_year">
         </li>
 
         <li>
