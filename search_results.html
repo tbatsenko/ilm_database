@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/header.css">
       <link rel="stylesheet" href="css/results.css">
+      <link rel="stylesheet" href="css/search_res.css">
 
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -25,11 +26,35 @@
     <div id="header"></div>
 
 
+    <div class="wrapper">
 
+      <
 
     <!-- <div class="strip-background"></div> -->
 
     <div class="search__container">
+
+        <h1>Пошук контаків випускників ІЛМ</h1>
+
+        <!-- <p class="description">Use jQuery to select between search fields with a button combo box
+          <br>By: <a href="https://twitter.com/freshmasterj" target="_blank">John McGarrah</a></p> -->
+
+          <div class="container my-container">
+                <div class="main-form-container">
+
+                  <form id="" class="" method="post">
+
+                    <input type="text" class="main-input" value="Пошук" onfocus="clearText(this)" />
+                    <input id="main-submit" class="" type="text" value="Пошук" onclick="window.location.href='https://tbatsenko.github.io/ilm_database/search_results.html'"/>
+
+                  </form>
+
+                </div>
+              <!-- mobile submit -->
+              <button type="button" id="main-submit-mobile"><a href="https://tbatsenko.github.io/ilm_database/search_results.html">Пошук</a></button>
+
+          </div>
+
       <ul class="card">
         <li class="search-item">
           <div class="search-item__image" style="background-image: url(http://placehold.it/100x100);"></div>
@@ -83,27 +108,8 @@
     </div>
 
 
-    <div class="search__container">
-      <div class="card">
-        <form class="form">
-          <div class="input__w-placeholder">
-            <label for="surname">Surname</label>
-            <input type="text" id="surname">
-          </div>
-          <div class="input__w-placeholder">
-            <label for="forename">Forename</label>
-            <input type="text" id="forename">
-          </div>
-          <div class="input__w-placeholder static-label">
-            <label for="dob">Date of birth</label>
-            <input type="date" id="dob">
-          </div>
-          <input type="submit" value="Search" class="button button--primary button--block"/>
-        </form>
-      </div>
-    </div>
     <div id="footer"></div>
-    <script type="text/javascript" src="./js/res_search.js"></script>
+    <script type="text/javascript" src="./js/search.js"></script>
 </body>
 
 
