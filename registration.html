@@ -18,6 +18,22 @@
         $("#footer").load("footer.html");
       });
       </script>
+
+      <script>
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+        </script>
+
 </head>
 
 
@@ -41,6 +57,18 @@
           <label for="last-name">Прізвище</label>
           <input type="text" id="last-name" placeholder="Введіть Ваше прізвище" required name="last-name">
         </li>
+
+        <li>
+            <label for="psw"><b>Пароль</b></label>
+            <input type="password" placeholder="Введіть пароль" name="psw" required>
+        </li>
+
+        <li>
+            <label for="photo"><b>Фото</b></label>
+            <input type='file' onchange="readURL(this);" />
+        </li>
+        <img class="register-photo" id="blah" src="http://placehold.it/180" alt="your image" />
+
         <li>
           <label for="city">Місто</label>
           <input type="text" id="city" placeholder="Введіть місто де ви зараз проживаєте" required name="city">
@@ -101,6 +129,9 @@
         <li>
           <button type="submit">Зареєструватися</button>
         </li>
+
+
+
       </ul>
     </form>
 </div>
