@@ -132,6 +132,7 @@ p {
  .main-form-container {
     height:50px;
     position: relative;
+     z-index: 9;
 }
  ul.search-description {
     width:150px;
@@ -266,4 +267,23 @@ p {
      .search-large {
         left:13px;
     }
+}
+
+#examples-wrapper {
+    height: 50px;
+    width: 608px;
+    background: white;
+    border-radius: 0 0 5px 5px;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 20px;
+    top: -4px;
+    position: relative;
+}
+
+#examples-wrapper .btn {
+    margin-left: 20px;
+    font-weight: bold;
 }
