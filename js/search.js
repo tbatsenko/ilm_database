@@ -42,3 +42,11 @@ function replaceText(thefield) {
     thefield.value = thefield.defaultValue
   }
 }
+
+var examplesButtons = document.querySelectorAll('#examples-wrapper .btn');
+for (var i = 0; i < examplesButtons.length; i++) {
+  examplesButtons[i].addEventListener('click', function (event) {
+    document.querySelector('.main-input').value = event.currentTarget.innerHTML;
+    document.querySelector('#main-submit').click();
+  })
+}
