@@ -24,7 +24,9 @@
 
 
 <body>
-    <div id="header"></div>
+
+        <div w3-include-html="header.html"></div>
+
 
     <div class="centerbox">
 
@@ -51,7 +53,13 @@
     <!-- mobile submit -->
     <button type="button" id="main-submit-mobile"><a href="https://tbatsenko.github.io/ilm_database/search_results.html">Пошук</a></button>
 
-    <div id="footer"></div>
+
+        <div w3-include-html="footer.html"></div>
+        <script type="text/javascript" src="/js/include.js"></script>
+
+        <script type="text/javascript">
+            includeHTML();
+        </script>
     <script type="text/javascript" src="./js/search.js"></script>
 </body>
 
