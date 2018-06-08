@@ -10,7 +10,7 @@ $('.search-description li').click(function() {
   newTarget = newTarget.replace(/\s/g, '');
   $(".search-large").html(newTarget);
   $('.search-description').hide();
-  $('.main-input').hide();
+  // $('.main-input').hide();
   newTarget = newTarget.toLowerCase();
   $('.main-' + newTarget).show();
 });
